@@ -1,0 +1,92 @@
+[versions]
+agp = "8.7.0"
+datastorePreferences = "1.1.1"
+glanceVersion = "1.1.1"
+gson = "2.10.1"
+hiltNavigationCompose = "1.2.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+kotlinxCoroutinesAndroid = "1.5.1"
+kotlinxCoroutinesCore = "1.5.0"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.2"
+composeBom = "2024.09.03"
+
+hiltVersion = "2.51.1"
+kspVersion = "1.9.0-1.0.13"
+materialIconsExtended = "1.7.6"
+roomCommon = "2.6.1"
+composeNavigation = "2.8.3"
+roomCompiler = "2.6.1"
+roomKtx = "2.6.1"
+roomRuntime = "2.6.1"
+serialization = "1.6.3"
+
+vico = "2.0.0-beta.2"
+glanceAppwidget = "1.1.1"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+androidx-glance = { module = "androidx.glance:glance", version.ref = "glanceVersion" }
+androidx-glance-material3 = { module = "androidx.glance:glance-material3" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-lifecycle-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android" , version.ref = "hiltVersion"}
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler" , version.ref = "hiltVersion"}
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+navigation-compose = {module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation"}
+kotlinx-serialization-json ={module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
+
+# For Jetpack Compose.
+vico-compose = { group = "com.patrykandpatrick.vico", name = "compose", version.ref = "vico" }
+
+# For `compose`. Creates a `ChartStyle` based on an M2 Material Theme.
+vico-compose-m2 = { group = "com.patrykandpatrick.vico", name = "compose-m2", version.ref = "vico" }
+
+# For `compose`. Creates a `ChartStyle` based on an M3 Material Theme.
+vico-compose-m3 = { group = "com.patrykandpatrick.vico", name = "compose-m3", version.ref = "vico" }
+
+# Houses the core logic for charts and other elements. Included in all other modules.
+vico-core = { group = "com.patrykandpatrick.vico", name = "core", version.ref = "vico" }
+
+# For the view system.
+vico-views = { group = "com.patrykandpatrick.vico", name = "views", version.ref = "vico" }
+androidx-glance-appwidget = { group = "androidx.glance", name = "glance-appwidget", version.ref = "glanceAppwidget" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+kotlinAndroidKsp = { id = "com.google.devtools.ksp", version.ref ="kspVersion" }
+hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref ="hiltVersion" }
+
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+
